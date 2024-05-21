@@ -1,0 +1,158 @@
+/* Error Message Styles */
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+/* EditJobForm Fields Container */
+
+.edit-job-form-fields {
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto repeat(5, 1fr);
+    row-gap: 0;
+    column-gap: 4rem;
+    border: 1px solid rgb(237, 235, 235);
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(114, 113, 113, 0.5); 
+    width: 80%;
+}
+
+.edit-job-form-fields label {
+    font-weight: bold;
+}
+
+.edit-job-form-fields h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+    grid-column: span 2;
+
+}
+
+/* EditJobForm Field */
+
+.edit-job-form-field {
+    display: flex;
+    flex-flow: column wrap;
+    gap: .5rem;
+    position: relative;
+}
+
+.edit-job-form-field input {
+    border: .5px solid black;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+.edit-job-form-field select {
+    padding: 0 5px;
+}
+
+.edit-job-form-field label {
+    padding-left: 5px;
+}
+
+.edit-job-form-buttons {
+    margin-top: .5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end; 
+    width: 80%; 
+}
+
+.edit-job-form-buttons .button {
+    font: inherit;
+    cursor: pointer;
+    padding: .5rem 2rem;
+    background-color: #FFC350;
+    color: black;
+    border-radius: 6px;
+    margin: 1rem; 
+}
+
+.edit-job-form-buttons .cancel {
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin: 1rem; 
+}
+
+.location-suggestions {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.job-location {
+    position: relative;
+}
+
+.delete-icon {
+    padding-left: 5px;
+}
+
+.clear-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    cursor: pointer; 
+    font-size: .8rem;  
+}
+
+.clear-icon:hover {
+    color: rgb(130, 127, 127);
+    font-size: .8rem; 
+}
+
+/* Error Message for Input Fields */
+.edit-job-form-field.error .error-message {
+  display: block; /* Show the error message */
+}
+
+/* Error Message for Time Fields */
+.time-input-fields.error .error-message {
+  display: block; /* Show the error message */
+}
+
+/* Mobile view */
+@media (max-width: 620px) {
+    .edit-job-form-fields {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+   .edit-job-form-field {
+        width: 100%;
+    }
+
+    .edit-job-form-buttons {
+        gap: .5rem;
+        width: 100%;
+    }
+
+    .edit-job-form-buttons .button {
+        width: 50%;
+        margin: 1rem 0;   
+        }
+}
+
+/* Tablet view */
+@media (min-width: 621px) and (max-width: 1024px) {
+    .edit-job-form-fields {
+    width: 100%;
+    column-gap: 2rem;
+}
+   .edit-job-form-buttons {
+    width: 100%;
+}
+}

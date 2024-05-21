@@ -1,0 +1,20 @@
+
+.upcoming-jobs-button {
+  border-color: #FFC350;
+  padding-bottom: .2rem;
+
+}
+
+.active-jobs-button {
+  border-color: #13A5EE;
+  padding-bottom: .2rem;
+}
+
+.completed-jobs-button {
+  border-color: #31B58D;
+  padding-bottom: .2rem;
+}
+
+
+
+

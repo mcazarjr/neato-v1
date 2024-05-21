@@ -1,0 +1,142 @@
+
+.job-item {
+    border: .5px solid lightgray;
+    box-shadow: 2px 5px 5px lightgray;
+    border-radius: 10px;
+    padding-right: 10px;
+    margin: .5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.job-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    align-items: flex-start;
+}
+
+.job-title span {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 2px;
+}
+
+.job-location-list {
+    font-size: .7rem;
+}
+
+.job-time .icon {
+    padding-right: 4px;
+}
+
+.job-staff {
+    font-size: .8rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.job-staff span {
+  cursor: pointer;
+  margin-right: .4rem;
+}
+
+.job-staff span:hover {
+  color: #7e7676;
+}
+
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+
+.hover {
+    width: 100%;
+}
+
+.job-buttons {
+    padding: 0;
+}
+
+.job-item-icons {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 22px 12px 6px 6px;
+    font-size: 1.2rem;
+    gap: .4rem;
+}
+
+.job-item-icons > .hidden-icon {
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+}
+
+.job-item-icons > .hovered-icon {
+    opacity: 1;
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(45, 43, 43);
+}
+
+.hovered-icon:hover {
+    color: #7e7676;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-text {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+  color: #7e7676; 
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease, color 0.3s ease; /* Add transitions */
+}
+
+.icon-container:hover .icon-text {
+  opacity: 1; /* Show the text on hover */
+}
+
+.job-date-time {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    gap: .8rem;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-archived {
+    color: #36313196;
+}
+
+@media (max-width: 541px) {
+    .job-date-time {
+    flex-flow: row wrap;
+    gap: .2rem;
+    }
+
+    .job-item-icons {
+    justify-content: center;
+    gap: .5rem;
+    }
+
+    .job-title {
+        font-size: 1rem;
+        font-weight: 700;
+        align-items: flex-start;
+        position: relative;
+    }
+}

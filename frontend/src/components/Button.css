@@ -1,0 +1,14 @@
+.button {
+    font: inherit;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    background-color: #FFC350;
+    color: black;
+    border-radius: 20px;
+    margin: 1rem; 
+}
+
+.create-job-button {
+ display: flex;
+ justify-content: flex-end;
+}
